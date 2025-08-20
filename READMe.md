@@ -104,33 +104,6 @@ const testIdle = new IdleSessionLogout({
 
 ---
 
-## Copy button for docs (example)
-
-> This snippet is intended for docs sites (Docusaurus, VitePress, Next.js) that allow adding client-side JS. GitHub README pages **do not** run embedded JS — you'll still get the visual code block but not the interactive copy button on GitHub.
-
-```html
-<!-- simple copy button for a docs page -->
-<div style="display:flex; gap:8px; align-items:center">
-  <pre id="install-cmd">npm install idle-session-logout</pre>
-  <button id="copy-btn" aria-label="Copy install command">📋 Copy</button>
-</div>
-
-<script>
-  document.getElementById('copy-btn').addEventListener('click', async () => {
-    const text = document.getElementById('install-cmd').innerText;
-    try {
-      await navigator.clipboard.writeText(text);
-      // briefly show feedback
-      const original = document.getElementById('copy-btn').innerText;
-      document.getElementById('copy-btn').innerText = 'Copied!';
-      setTimeout(() => (document.getElementById('copy-btn').innerText = original), 1200);
-    } catch (err) {
-      console.error('Copy failed', err);
-      alert('Copy failed — please select and copy manually');
-    }
-  });
-</script>
-```
 
 ---
 
