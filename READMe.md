@@ -14,8 +14,7 @@ By default the library logs users out after 30 minutes of inactivity (30 Ã— 60 Ã
 
 ## Usage
 
-`
-import IdleSessionLogout from 'idle-session-logout';
+`import IdleSessionLogout from 'idle-session-logout';
 
 const idle = new IdleSessionLogout({
   timeout: 30 * 60 * 1000,
@@ -24,10 +23,7 @@ const idle = new IdleSessionLogout({
     window.location.href = '/login';
   }
 });
-idle.start();
-
-// call idle.stop() when you want to cleanup
-`
+idle.start();`
 
 ## Helpful helpers
 If you prefer to specify time in minutes for readability, use a small helper:
