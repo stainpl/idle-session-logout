@@ -156,8 +156,6 @@ Contributions welcome — please open issues or PRs. Keep PRs small and focused.
 
 ## License
 
-MIT © Your Name
+MIT © Silas T.
 
 ---
-
-If you'd like, I can also export this as a `README.md` file you can drop into your repo, or add a small screenshot / demo GIF to the docs section. Just tell me which you'd prefer.
