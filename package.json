@@ -1,0 +1,42 @@
+{
+  "name": "idle-session-logout",
+  "version": "1.0.1",
+  "description": "A lightweight utility to automatically log users out after inactivity",
+  "main": "dist/inactivity-logout.cjs.js",
+  "module": "dist/inactivity-logout.esm.js",
+  "unpkg": "dist/inactivity-logout.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/inactivity-logout.esm.js",
+      "require": "./dist/inactivity-logout.cjs.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"no tests\" && exit 0"
+  },
+  "keywords": [
+    "idle",
+    "session",
+    "logout",
+    "inactivity",
+    "auth",
+    "security"
+  ],
+  "author": "9shila@mail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^2.79.2"
+  }
+}
