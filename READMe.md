@@ -4,8 +4,9 @@ A lightweight utility to automatically log users out after inactivity. Useful fo
 
 ## Installation
 
-```bash
+`
 npm install idle-session-logout
+`
 
 Customizing the default logout time
 
