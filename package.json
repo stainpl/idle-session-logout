@@ -4,11 +4,13 @@
   "description": "A lightweight utility to automatically log users out after inactivity",
   "main": "dist/inactivity-logout.cjs.js",
   "module": "dist/inactivity-logout.esm.js",
+  "types": "dist/inactivity-logout.d.ts",
   "unpkg": "dist/inactivity-logout.umd.js",
   "exports": {
     ".": {
       "import": "./dist/inactivity-logout.esm.js",
-      "require": "./dist/inactivity-logout.cjs.js"
+      "require": "./dist/inactivity-logout.cjs.js",
+      "types": "./dist/inactivity-logout.d.ts"
     }
   },
   "files": [
@@ -17,7 +19,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build:types": "tsc -p tsconfig.types.json",
+    "build": "rollup -c && npm run build:types",
     "prepublishOnly": "npm run build",
     "test": "echo \"no tests\" && exit 0"
   },
@@ -37,6 +40,7 @@
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
-    "rollup": "^2.79.2"
+    "rollup": "^2.79.2",
+    "typescript": "^5.9.2"
   }
 }
