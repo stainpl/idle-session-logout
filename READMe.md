@@ -31,17 +31,12 @@ A tiny, dependency-free utility that automatically logs users out after inactivi
 
 Single-line install command with quick-copy affordance (emoji shown as lightweight visual affordance):
 
- `npm install idle-session-logout`
-
-<details>
-<summary>Copy-friendly code block</summary>
 
 ```bash
 # install from npm
 npm install idle-session-logout
 ```
 
-</details>
 
 
 
